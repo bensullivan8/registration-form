@@ -5,6 +5,7 @@
   <title>Contact form</title>
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,22 +18,24 @@
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
       <fieldset>
         <legend class="italic">Personal details</legend>
-          <div class="push">
+        <div class="grid">
+          <div class="push unit xs-1 m-1-2">
             <label for="name">Name</label>
             <input id="name" name="name" required>
           </div>
 
-          <div class="push">
+          <div class="push unit xs-1 m-1-2">
             <label for="age">Age</label>
             <input id="age" name="age" type="number" required>
           </div>
-
-          <div class="push">
+        </div>
+        <div class="grid">
+          <div class="push unit xs-1 m-1-2">
             <label for="email">Email</label>
             <input id="email" type="email" name="email" required>
           </div>
 
-          <div class="push">
+          <div class="push unit xs-1 m-1-2">
           <label for="physical-fitness">Physical fitness</label>
           <select id="physical-fitness" name="physical-fitness" required>
             <option value="">Super-human</option>
@@ -41,7 +44,7 @@
             <option value="">A little couch-potato-y</option>
           </select>
           </div>
-
+        </div>
           <div class="push">
             <label for="address">Address</label>
             <textarea id="address" name="address" required></textarea>
@@ -52,7 +55,7 @@
 
           <div class="push">
             <label for="why">Why do you want to go to Mars?</label>
-            <textarea id="why" name="why" required>Request to join the mission</textarea>
+            <textarea id="why" name="why" required></textarea>
           </div>
         </fieldset>
 
