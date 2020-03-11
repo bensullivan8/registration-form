@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Contact form</title>
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <section class="contact pad-t-2 pad-b-2">
+    <div class="max-length">
+      <form class="push-0" method="POST" action="https://formspree.io/sull0249@algonquinlive.com">
+      <h1>Want to go to Mars?</h1>
+      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <fieldset>
+        <legend class="italic">Personal details</legend>
+          <div class="push">
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+          </div>
+
+          <div class="push">
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" required>
+          </div>
+
+          <div class="push">
+            <label for="email">Your email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+
+          <div class="push">
+          <label for="physical-fitness">Physical Fitness</label>
+          <select id="physical-fitness" name="physical-fitness" required>
+            <option value="">Super-human</option>
+            <option value="">Fit as a fiddle</option>
+            <option value="">Not terribly strong</option>
+            <option value="">A little couch-potato-y</option>
+          </select>
+          </div>
+
+          <div class="push">
+            <label for="address">Address</label>
+            <textarea id="address" type="text" name="address" required></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="italic">Mission Statement</legend>
+
+          <div class="push">
+            <label for="why">Why do you want to go to Mars?</label>
+            <textarea id="why" type="text" name="why" required></textarea>
+          </div>
+        </fieldset>
+
+        <div>
+          <button class="btn btn-dark mega " type="submit">Register for the trip!</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
